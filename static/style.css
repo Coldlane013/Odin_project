@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,200&display=swap');
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1{
+    font-weight: 700;
+    font-size: 4vw;
+
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.5;
+}
+.sub-head{
+    font-size: 2vw;
+    font-weight: 200;
+}
+.p-header{
+    line-height: 2;
+    font-size: 1vw;
+    padding-top: 4%;
+    
+}
+li{
+    text-decoration: none;
+    font-weight: 200;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 5%;
+}
+.header-text{
+    font-size: 2vw;
+    padding-left: 10%;
+}
+.first-body{
+background: url(/asset/images/pinkw.png);
+background-repeat: no-repeat;
+background-size: cover;
+animation: fadeInDown 1s ease-in-out;
+
+}
+.first-section{
+    padding: 11%;
+    display: flex;
+    animation: fadeInDown 2s;
+}
+.nav-style{
+    background: none;
+    padding: 0%;
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    padding-top: 1%;
+}
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 5vw 5vw 5vw 5vw;
+    animation: fadeInDown 2.5s ease-in-out;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+.card{
+    width: min(100%, 250px);
+    background: rgba(255, 255, 255,0.1);
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    align-items: center;
+}
+.card > img{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 3/3;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 15px 15px 0 0;
+    filter: contrast(70%);
+    transition: all 0.6s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    margin: auto;
+  }
+  .card > img:hover {
+    filter: contrast(100%);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .card-content > p {
+    margin-bottom: 10px;
+  }
+  
+  .card-content > p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1e40af;
+  }
+  
+  .card-content > p:nth-child(2) {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .third-section{
+    background: url(/asset/images/greenw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeInDown 1s ease-in-out;
+    padding: 10%;
+    }
+  .slogan{
+    padding-top: 10%;
+  text-align: center;
+  color: rgb(40, 38, 38);
+  font-weight: 700;
+  font-size: 5vw;
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animate__fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+  @media (max-width: 900px) {
+    .grid-card {
+       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .grid-card {
+       grid-template-columns: repeat(1, 1fr);
+    }
+  }
